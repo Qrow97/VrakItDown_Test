@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:VrakItDown/Assets/Assets_Orcun/Scripts/Background/ParallaxCamera.cs.meta
-guid: 103dc05f6e2b646429510a5c76d52f16
+<<<<<<< HEAD:VrakItDown/Assets/MainCharacterTest/Scripts/PlayerPlatformerController.cs.meta
+guid: 99cac121ecad7c7449de6aa37cc81a4c
 =======
-guid: f04dc70037bd1c542ab45b244fd62bac
->>>>>>> Main_Test_Branch:VrakItDown/Assets/MainCharacterTest/Scripts/PlayerPlatformerController.cs.meta
+guid: 103dc05f6e2b646429510a5c76d52f16
+>>>>>>> Test_Branch_Orcun:VrakItDown/Assets/Assets_Orcun/Scripts/Background/ParallaxCamera.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

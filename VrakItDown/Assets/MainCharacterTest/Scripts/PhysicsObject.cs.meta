@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:VrakItDown/Assets/Assets_Orcun/Scripts/Background/ParallaxBackground.cs.meta
-guid: 62e6afd178d33cd499809bb961f0c14e
-=======
+<<<<<<< HEAD:VrakItDown/Assets/MainCharacterTest/Scripts/PhysicsObject.cs.meta
 guid: 26453b438670c4642a4ed1767246fc5f
->>>>>>> Main_Test_Branch:VrakItDown/Assets/MainCharacterTest/Scripts/PhysicsObject.cs.meta
+=======
+guid: 62e6afd178d33cd499809bb961f0c14e
+>>>>>>> Test_Branch_Orcun:VrakItDown/Assets/Assets_Orcun/Scripts/Background/ParallaxBackground.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
