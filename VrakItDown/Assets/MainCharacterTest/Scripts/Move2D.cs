@@ -8,12 +8,16 @@ public class Move2D : MonoBehaviour
     public float jumpForce = 5f;
     public bool isGrounded = false;
     public bool canDoubleJump = false;
+    private bool facingRight = true;
+    private float moveInput;
+
+    private Rigidbody2D rb;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,6 +26,15 @@ public class Move2D : MonoBehaviour
         Jump();
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * moveSpeed;
+
+        moveInput = Input.GetAxis("Horizontal");
+        if (facingRight == false && moveInput > 0)
+        {
+            Flip();
+        }else if(facingRight == true && moveInput < 0)
+        {
+            Flip();
+        }
     }
 
     void Jump()
@@ -38,6 +51,14 @@ public class Move2D : MonoBehaviour
 
         }
 
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
     }
 
     
