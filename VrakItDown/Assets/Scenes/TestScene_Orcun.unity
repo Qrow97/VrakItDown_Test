@@ -181,7 +181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126576103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.325669, y: -0.9247017, z: 0}
+  m_LocalPosition: {x: -8.328298, y: -0.9247017, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 795041193}
@@ -319,7 +319,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 543485390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.474331, y: 0.15470165, z: -10}
+  m_LocalPosition: {x: -5.4717026, y: 0.15470165, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 126576104}
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 654631407}
   m_Layer: 0
   m_Name: Level1Map
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -417,7 +417,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e6afd178d33cd499809bb961f0c14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxCamera: {fileID: 543485395}
 --- !u!1 &714829820
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,6 +563,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &951671037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5443750004816627154, guid: defe51cb126a1094f85ce71a0857c41a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3782855845577462162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &951671038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951671037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04dc70037bd1c542ab45b244fd62bac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minGroundNormalY: 0.65
+  gravityModifier: 1
+  maxSpeed: 8
+  jumpTakeOffSpeed: 15
 --- !u!1 &975807647
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +598,7 @@ GameObject:
   - component: {fileID: 975807649}
   m_Layer: 0
   m_Name: Ground_sample
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1002,10 +1023,11 @@ PolygonCollider2D:
       - {x: 5.3103814, y: -0.53523517}
       - {x: 3.0382361, y: 0.4352901}
       - {x: 0.7204732, y: -0.57436705}
-      - {x: -1.6809684, y: -0.35182357}
-      - {x: -4.0438027, y: 0.39604807}
-      - {x: -7.012512, y: -0.68833494}
-      - {x: -13.476124, y: 0.90278697}
+      - {x: -1.3960513, y: -0.32879376}
+      - {x: -1.8245116, y: -0.20402193}
+      - {x: -4.1240177, y: 0.44672298}
+      - {x: -7.062373, y: -0.68833494}
+      - {x: -13.533107, y: 1.079123}
       - {x: -15.525034, y: 0.75629616}
       - {x: -13.426592, y: -2.1399617}
       - {x: -7.740416, y: -2.653643}
@@ -1019,6 +1041,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 99740346}
     m_Modifications:
+    - target: {fileID: 3782855844212390792, guid: defe51cb126a1094f85ce71a0857c41a,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 3.75
+      objectReference: {fileID: 0}
     - target: {fileID: 3782855844212390795, guid: defe51cb126a1094f85ce71a0857c41a,
         type: 3}
       propertyPath: m_IsTrigger
@@ -1028,6 +1055,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kimmitv2_Raw
+      objectReference: {fileID: 0}
+    - target: {fileID: 5443750004816627154, guid: defe51cb126a1094f85ce71a0857c41a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7992044123218559297, guid: defe51cb126a1094f85ce71a0857c41a,
         type: 3}
