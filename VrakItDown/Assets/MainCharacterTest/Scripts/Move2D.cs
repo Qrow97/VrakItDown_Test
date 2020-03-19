@@ -46,9 +46,8 @@ public class Move2D : MonoBehaviour
         }
         else if (Input.GetButtonDown("Jump") && canDoubleJump == true)
         {
-            canDoubleJump = false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-
+			canDoubleJump = false;
         }
 
     }

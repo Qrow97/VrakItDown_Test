@@ -56,17 +56,16 @@ public class PlayerPlatformerController : PhysicsObject
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && grounded == true)
+        if (Input.GetButtonDown("Jump") /*&& grounded == true*/)
         {
             canDoubleJump = true;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpTakeOffSpeed), ForceMode2D.Impulse);
             
         }
-        else if (Input.GetButtonDown("Jump") && canDoubleJump == true && grounded == false)
+        else if (Input.GetButtonDown("Jump") && canDoubleJump == true /*&& grounded == false*/)
         {
-            canDoubleJump = false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpTakeOffSpeed), ForceMode2D.Impulse);
-
+			canDoubleJump = false;
         }
         else if(grounded == true)
         {
