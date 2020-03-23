@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: kimmitSkins
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Kafa
+    m_Hash: 760626392
+    m_CategoryList:
+    - m_Name: sari
+      m_Hash: 951890929
+      m_Sprite: {fileID: -6292390921930772350, guid: 6e87e390659351f42b4321cdd191fbaa,
+        type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: 1382719798018623997, guid: 56f5e66739bbdc04baa3f79f135c8461,
+        type: 3}
+  - m_Name: Govde
+    m_Hash: 595704711
+    m_CategoryList:
+    - m_Name: sari
+      m_Hash: 951890929
+      m_Sprite: {fileID: -4999396392791422447, guid: 6e87e390659351f42b4321cdd191fbaa,
+        type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: -4957761858145644625, guid: 56f5e66739bbdc04baa3f79f135c8461,
+        type: 3}
+  - m_Name: solKol
+    m_Hash: -1941418287
+    m_CategoryList:
+    - m_Name: sari
+      m_Hash: 951890929
+      m_Sprite: {fileID: -7545836412657429492, guid: 6e87e390659351f42b4321cdd191fbaa,
+        type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: -1365473964650284742, guid: 56f5e66739bbdc04baa3f79f135c8461,
+        type: 3}
+  - m_Name: sagKol
+    m_Hash: -461801551
+    m_CategoryList:
+    - m_Name: sari
+      m_Hash: 951890929
+      m_Sprite: {fileID: 5289002414184701818, guid: 6e87e390659351f42b4321cdd191fbaa,
+        type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: -4593322503882535157, guid: 56f5e66739bbdc04baa3f79f135c8461,
+        type: 3}
+  - m_Name: solBacak
+    m_Hash: 143373879
+    m_CategoryList:
+    - m_Name: sari
+      m_Hash: 951890929
+      m_Sprite: {fileID: 201547515861834695, guid: 6e87e390659351f42b4321cdd191fbaa,
+        type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: -4307705223056776074, guid: 56f5e66739bbdc04baa3f79f135c8461,
+        type: 3}
+  - m_Name: sagBacak
+    m_Hash: 846413225
+    m_CategoryList:
+    - m_Name: sari
+      m_Hash: 951890929
+      m_Sprite: {fileID: -9039301930338706010, guid: 6e87e390659351f42b4321cdd191fbaa,
+        type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: 7262372358108483697, guid: 56f5e66739bbdc04baa3f79f135c8461,
+        type: 3}
