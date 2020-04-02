@@ -5,48 +5,58 @@ using UnityEngine;
 public class PlayerPlatformerController : PhysicsObject
 {
 
-    public float maxSpeed = 7;
-    public float jumpTakeOffSpeed = 7;
+    private int amountOfJumpsLeft;
+    public int amountOfJumps = 1;
 
-    private bool facingRight = true;
-    
+    public float maxSpeed = 7;
+    public float jumpForce = 7;
+
+
+    private bool facingRight = false;
+    private bool canJump;
+    public bool canDoubleJump = false;
+
     private SpriteRenderer spriteRenderer;
     private Animator animator;
-   
-
+    private BoxCollider2D capsuleCollider2D;
+    private Rigidbody2D rigidbody2D;
+    
 
     // Use this for initialization
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     protected override void ComputeVelocity()
     {
+
+        //Horizontal Movement
         Vector2 move = Vector2.zero;
-
         move.x = Input.GetAxis("Horizontal");
-
-        Jump();
-
-        if (facingRight == false && move.x > 0)
-        {
-            Flip();
-        }
-        else if (facingRight == true && move.x < 0)
-        {
-            Flip();
-        }
-
-        animator.SetBool("grounded", grounded);
-        animator.SetBool("canDoubleJump", canDoubleJump);
-        animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
-
         targetVelocity = move * maxSpeed;
+
+
+        
+        
+        if (facingRight == false && move.x < 0)
+        {
+            Flip();
+        }
+        else if (facingRight == true && move.x > 0)
+        {
+            Flip();
+        }
+
+        CheckIfCanJump();
+        Jump();
+        Animator();
+        
     }
 
-    void Flip()
+    private void Flip()
     {
         facingRight = !facingRight;
         Vector3 Scaler = transform.localScale;
@@ -54,27 +64,53 @@ public class PlayerPlatformerController : PhysicsObject
         transform.localScale = Scaler;
     }
 
-    void Jump()
+    private void Animator()
     {
-        if (Input.GetButtonDown("Jump") && grounded == true)
+        animator.SetBool("canDoubleJump", canDoubleJump);
+        animator.SetBool("grounded", grounded);
+        animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+    }
+
+    private void CheckIfCanJump()
+    {
+        if (grounded)
         {
+            amountOfJumpsLeft = amountOfJumps;
+        }
+
+        
+
+        if (amountOfJumpsLeft <= 0)
+        {
+            canJump = false;
+        }
+        else
+        {
+            canJump = true;
+        }
+
+    }
+
+    private void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && grounded && canJump)
+        {
+            velocity.y = jumpForce;
+            amountOfJumpsLeft--;
+        }
+        else if (Input.GetButtonDown("Jump") && !grounded && canJump)
+        {
+            velocity.y = jumpForce;
+            amountOfJumpsLeft--;
             canDoubleJump = true;
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpTakeOffSpeed), ForceMode2D.Impulse);
-            
         }
-        else if (Input.GetButtonDown("Jump") && canDoubleJump == true && grounded == false)
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpTakeOffSpeed), ForceMode2D.Impulse);
-			canDoubleJump = false;
-        }
-        else if(grounded == true)
+        else if (grounded)
         {
             canDoubleJump = false;
         }
-        
 
     }
+
+
+
 }
-    
-
-
