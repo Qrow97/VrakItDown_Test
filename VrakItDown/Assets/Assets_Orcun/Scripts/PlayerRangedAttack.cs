@@ -9,7 +9,7 @@ public class PlayerRangedAttack : MonoBehaviour
     public float offset;
     public Transform shotPoint;
     //timer purposes
-    public float timeBetweenShots;
+    private float timeBetweenShots;
     public float startBetweenShots;
     
     public GameObject projectile;
@@ -31,6 +31,7 @@ public class PlayerRangedAttack : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1))
             {
+                Debug.Log("Ranged attack Used");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
                 timeBetweenShots = startBetweenShots;
             }
