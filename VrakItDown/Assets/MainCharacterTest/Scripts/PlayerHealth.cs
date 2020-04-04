@@ -28,4 +28,14 @@ public class PlayerHealth : HealthSystem
         }
         
     }
+    public void TakeDamage(int damage)
+    {
+        playerHealth -= damage;
+        //Test purposes
+        Debug.Log("Taking DMG");
+        if (playerHealth <= 0)
+        {
+            //die
+        }
+    }
 }
