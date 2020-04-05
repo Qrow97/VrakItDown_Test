@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Enemy_Walk_Combat : StateMachineBehaviour
 {
+
+    public string attackTriggerName = "Attack";
     [SerializeField] float agroRange;
     [SerializeField] float stoppingDistance;
 
+    
     public float attackRange = 3f;
     public float speed = 2.5f;
 
@@ -50,14 +53,14 @@ public class Enemy_Walk_Combat : StateMachineBehaviour
 
         if (Vector2.Distance(player.position, rigidBody.position) <= attackRange)
         {
-            animator.SetTrigger("Attack1");
+            animator.SetTrigger(attackTriggerName);
         }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("Attack1");
+        animator.ResetTrigger(attackTriggerName);
     }
     
 
