@@ -5,7 +5,7 @@ using UnityEngine;
 public class RangedProjectile : MonoBehaviour
 {
     // Start is called before the first frame update
-    public int damage;
+    public int damage = 15;
     public float speed;
     public float lifeTime;
     public float distance;
@@ -27,7 +27,7 @@ public class RangedProjectile : MonoBehaviour
             if (hitInfo.collider.CompareTag("Enemy"))
             {
                 //hit dmg
-                hitInfo.collider.GetComponent<Enemy>().TakeDamage(damage);
+                hitInfo.collider.GetComponent<EnemyHealth>().TakeDamage(damage);
             }
             //Going be destroyed anyway
             DestroyProjectile();
