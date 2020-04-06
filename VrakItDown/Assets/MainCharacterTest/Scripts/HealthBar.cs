@@ -6,46 +6,23 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Image fillImage;
-    PlayerHealth playerHealth;
-    private Slider slider;
-    private float fillValue;
+    public Slider slider;
+    public Gradient gradient;
+    public Image fill;
 
-    
 
-    private void Awake()
+    public void SetMaxHealth(int health)
     {
-        slider = GetComponent<Slider>();
+        slider.maxValue = health;
+        slider.value = health;
+
+        fill.color = gradient.Evaluate(1f);
     }
 
-    private void Start()
+    public void SetHealth(int health)
     {
-        
-        SetHealth(playerHealth.GetHealthNormalized());
-        playerHealth.OnDamaged += HealthSystem_OnDamaged;
-        playerHealth.OnHealed += HealthSystem_OnHealed;
-        
+        slider.value = health;
 
-    }
-
-    private void Update()
-    {
-        fillValue = SetHealth(playerHealth.GetHealthNormalized());
-        slider.value = fillValue;
-    }
-
-    private void HealthSystem_OnHealed(object sender, EventArgs e)
-    {
-        SetHealth(playerHealth.GetHealthNormalized());
-    }
-
-    private void HealthSystem_OnDamaged(object sender, EventArgs e)
-    {
-        SetHealth(playerHealth.GetHealthNormalized());
-    }
-
-    private float SetHealth(float healthNormalized)
-    {
-       return fillValue = playerHealth.GetHealthNormalized();
+        fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 }
