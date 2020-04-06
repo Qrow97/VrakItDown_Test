@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
         if(currentHealth <= 0)
         {
             currentHealth = 0;
+            Respawn();
         }
 
         healthBar.SetHealth(currentHealth);
@@ -56,6 +57,11 @@ public class Player : MonoBehaviour
         }
 
         healthBar.SetHealth(currentHealth);
+    }
+
+    void Respawn()
+    {
+        transform.position = Vector3.zero;
     }
 
 
