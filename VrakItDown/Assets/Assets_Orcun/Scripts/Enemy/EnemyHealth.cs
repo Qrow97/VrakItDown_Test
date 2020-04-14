@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+	//public GameObject blood;
 	public int health = 100;
 	private Animation anim;
 	private bool isInvulnerable = false;
-	//public GameObject deathEffect;
+	public GameObject deathEffect;
 
 
 	public void TakeDamage(int damage)
@@ -19,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
 		if (health <= 0)
 		{
 			Die();
+			Instantiate(deathEffect, transform.position, Quaternion.identity);
 		}
 	}
 
@@ -26,7 +28,7 @@ public class EnemyHealth : MonoBehaviour
 	{
 		isInvulnerable = true;
 		GetComponent<Animator>().SetTrigger("isDead");
-		//Instantiate(deathEffect, transform.position, Quaternion.identity);
+		
 		
 		Destroy(gameObject, 4);
 	}
