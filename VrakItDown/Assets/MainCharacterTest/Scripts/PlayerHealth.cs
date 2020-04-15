@@ -7,6 +7,7 @@ public class PlayerHealth : HealthSystem
 
     HealthSystem healthSystem;
     public int playerHealth;
+	public GameObject damageEffect; //damageEffect prefab buraya ekliyorsun.
 
     public PlayerHealth(int healthAmounthMax) : base(healthAmounthMax)
     {
@@ -31,6 +32,7 @@ public class PlayerHealth : HealthSystem
     public void TakeDamage(int damage)
     {
         playerHealth -= damage;
+		Instantiate(damageEffect, transform.position, Quaternion.identity); //damageEffect prefab cagirma
         //Test purposes
         Debug.Log("Taking DMG");
         if (playerHealth <= 0)

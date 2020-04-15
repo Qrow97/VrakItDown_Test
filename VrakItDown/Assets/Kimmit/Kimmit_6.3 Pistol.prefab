@@ -1580,6 +1580,8 @@ MonoBehaviour:
   healthAmount: 5
   healthAmounthMax: 100
   playerHealth: 100
+  damageEffect: {fileID: 3000667300745243835, guid: afe45dc07b2c1a04dbf79ca22eaf7ed3,
+    type: 3}
 --- !u!1 &8527846709443975318
 GameObject:
   m_ObjectHideFlags: 0

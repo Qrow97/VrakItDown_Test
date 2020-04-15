@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11457ce528a32724bb02f58f7b39c938, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 461277720}
+  player: {fileID: 1814050020}
   isFlipped: 0
 --- !u!95 &68677497
 Animator:
@@ -747,6 +747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  damageEffect: {fileID: 1511890543161336146, guid: 94fb84565e2cd1f4a9a32f695fb61209,
+    type: 3}
   deathEffect: {fileID: 1692970239566881582, guid: 7e51e25437979da4cbf1817e4dc9aa4a,
     type: 3}
 --- !u!1 &99740345
@@ -1104,12 +1106,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 211071786}
---- !u!4 &461277720 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1150865193349511763, guid: 2059d6060c2a2ad4a8af91ed2b599f0b,
-    type: 3}
-  m_PrefabInstance: {fileID: 6694134683186154257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &543485390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3038,7 +3034,7 @@ PrefabInstance:
     - target: {fileID: 1150865193349511769, guid: 2059d6060c2a2ad4a8af91ed2b599f0b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1150865193410729080, guid: 2059d6060c2a2ad4a8af91ed2b599f0b,
         type: 3}
@@ -3359,5 +3355,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.99572265
       objectReference: {fileID: 0}
+    - target: {fileID: 7995407598897642374, guid: be724971dab5203468beef1b9ff7ead0,
+        type: 3}
+      propertyPath: damageEffect
+      value: 
+      objectReference: {fileID: 3000667300745243835, guid: afe45dc07b2c1a04dbf79ca22eaf7ed3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be724971dab5203468beef1b9ff7ead0, type: 3}
