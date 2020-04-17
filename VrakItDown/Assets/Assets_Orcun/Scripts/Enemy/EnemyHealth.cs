@@ -5,10 +5,9 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 	public int health = 100;
-	private Animation anim;
 	private bool isInvulnerable = false;
-	public GameObject damageEffect;	//damage, az kan
-	public GameObject deathEffect;	//death, cok kan
+	public GameObject damageEffect;	//damage, less blood
+	public GameObject deathEffect;	//death, more blood
 
 
 	public void TakeDamage(int damage)
@@ -21,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
 		if (health <= 0)
 		{
 			Die();
-			Instantiate(deathEffect, transform.position, Quaternion.identity);	//ölüm effect buraya ekledim. Die fonksiyonu icinde cagirdigin zaman bazen sorun cikiartiyordu.
+			Instantiate(deathEffect, transform.position, Quaternion.identity);	
 		}
 	}
 
@@ -29,8 +28,6 @@ public class EnemyHealth : MonoBehaviour
 	{
 		isInvulnerable = true;
 		GetComponent<Animator>().SetTrigger("isDead");
-		
-		
 		Destroy(gameObject, 4);
 	}
 }

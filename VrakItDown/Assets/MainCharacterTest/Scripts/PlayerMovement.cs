@@ -21,7 +21,14 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Others")]
     public bool isGrounded;
-    
+
+    SavePlayerPosition playerPositionData;
+    private void Awake()
+    {
+        playerPositionData = FindObjectOfType<SavePlayerPosition>();
+        playerPositionData.PlayerPositionLoad();
+    }
+
 
     // Initialization
     private void Start()

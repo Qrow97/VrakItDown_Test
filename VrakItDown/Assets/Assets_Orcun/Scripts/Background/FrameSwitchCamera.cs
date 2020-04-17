@@ -5,20 +5,20 @@ using UnityEngine;
 public class FrameSwitchCamera : MonoBehaviour
 {
 
-    public GameObject currentFrame;
-    public GameObject nextFrame;
+    public GameObject activeFrame;
+    public GameObject[] deactiveFrames;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(currentFrame.active == true)
+        if(collision.gameObject.tag == "Player")
         {
-            currentFrame.SetActive(false);
-            nextFrame.SetActive(true);
-        }else if(currentFrame.active == false)
-        {
-            currentFrame.SetActive(true);
-            nextFrame.SetActive(false);
+            activeFrame.SetActive(true);
+            for(int i = 0; i < deactiveFrames.Length; i++)
+            {
+                deactiveFrames[i].SetActive(false);
+            }
         }
+        
     }
 
 }
