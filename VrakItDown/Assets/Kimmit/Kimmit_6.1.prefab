@@ -1,5 +1,132 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1551038838254700052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2470423352772384145}
+  - component: {fileID: 8421670752531104068}
+  m_Layer: 0
+  m_Name: Audio_walk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2470423352772384145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551038838254700052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8439801984956305553}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8421670752531104068
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551038838254700052}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5ff1d0fb0ac45c748bd6fb696347f628, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8439801983115501731
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,13 +355,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2063037630395264091, guid: 4877114c6a893ba4fb6ea853ac5d976f,
+  m_Sprite: {fileID: -1365473964650284742, guid: 56f5e66739bbdc04baa3f79f135c8461,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.4, y: 5.5}
+  m_Size: {x: 3.4, y: 6.86}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -257,8 +384,8 @@ MonoBehaviour:
   - {fileID: 8439801984305247232}
   - {fileID: 8439801983509990562}
   m_Bounds:
-    m_Center: {x: -7.8471823, y: -0.7636969, z: 0}
-    m_Extent: {x: 1.9308462, y: 3.2246637, z: 0}
+    m_Center: {x: -7.847182, y: -0.7636969, z: 0}
+    m_Extent: {x: 1.9308457, y: 3.2246637, z: 0}
   m_UseBatching: 1
 --- !u!114 &8439801983194912082
 MonoBehaviour:
@@ -361,12 +488,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 550053114941372334, guid: 4877114c6a893ba4fb6ea853ac5d976f, type: 3}
+  m_Sprite: {fileID: 7262372358108483697, guid: 56f5e66739bbdc04baa3f79f135c8461,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.43, y: 10.09}
+  m_Size: {x: 1.43, y: 10.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -390,8 +518,8 @@ MonoBehaviour:
   - {fileID: 8439801985052821867}
   - {fileID: 8439801983349776755}
   m_Bounds:
-    m_Center: {x: -8.311163, y: -0.553144, z: 0}
-    m_Extent: {x: 0.7990804, y: 5.0127645, z: 0}
+    m_Center: {x: -8.311165, y: -0.553143, z: 0}
+    m_Extent: {x: 0.7990813, y: 5.0127635, z: 0}
   m_UseBatching: 1
 --- !u!114 &8439801983213925999
 MonoBehaviour:
@@ -494,7 +622,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 8360257505674892007, guid: 4877114c6a893ba4fb6ea853ac5d976f,
+  m_Sprite: {fileID: -4957761858145644625, guid: 56f5e66739bbdc04baa3f79f135c8461,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -626,7 +754,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 7196338666427613515, guid: 4877114c6a893ba4fb6ea853ac5d976f,
+  m_Sprite: {fileID: -4593322503882535157, guid: 56f5e66739bbdc04baa3f79f135c8461,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -851,13 +979,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1349276290728050643, guid: 4877114c6a893ba4fb6ea853ac5d976f,
+  m_Sprite: {fileID: -4307705223056776074, guid: 56f5e66739bbdc04baa3f79f135c8461,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.45, y: 7.98}
+  m_Size: {x: 3.62, y: 8.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -881,8 +1009,8 @@ MonoBehaviour:
   - {fileID: 8439801983671914115}
   - {fileID: 8439801983123590277}
   m_Bounds:
-    m_Center: {x: -9.550751, y: -0.8197036, z: 0}
-    m_Extent: {x: 2.629026, y: 4.202608, z: 0}
+    m_Center: {x: -9.550749, y: -0.8197031, z: 0}
+    m_Extent: {x: 2.6290264, y: 4.202607, z: 0}
   m_UseBatching: 1
 --- !u!114 &8439801983566293132
 MonoBehaviour:
@@ -1205,13 +1333,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -4009539525062339195, guid: 4877114c6a893ba4fb6ea853ac5d976f,
+  m_Sprite: {fileID: 1382719798018623997, guid: 56f5e66739bbdc04baa3f79f135c8461,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.49, y: 3.64}
+  m_Size: {x: 3.5, y: 3.68}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1690,7 +1818,7 @@ GameObject:
   - component: {fileID: 8439801984956305561}
   - component: {fileID: 8439801984956305560}
   m_Layer: 0
-  m_Name: Kimmit_6 chameleon 1
+  m_Name: Kimmit_6.1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1719,6 +1847,7 @@ Transform:
   - {fileID: 8439801983878657435}
   - {fileID: 8439801984086668872}
   - {fileID: 8439801984703626706}
+  - {fileID: 2470423352772384145}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1867,8 +1996,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minGroundNormalY: 0.65
   gravityModifier: 1
+  amountOfJumps: 1
   maxSpeed: 8
-  jumpTakeOffSpeed: 15
+  jumpForce: 7
+  canDoubleJump: 0
 --- !u!1 &8439801984965557706
 GameObject:
   m_ObjectHideFlags: 0
