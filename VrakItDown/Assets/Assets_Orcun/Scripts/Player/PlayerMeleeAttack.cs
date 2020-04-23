@@ -31,6 +31,8 @@ public class PlayerMeleeAttack : MonoBehaviour
                 for(int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<EnemyHealth>().TakeDamage(damage);
+
+                   
                 }
             }
         }

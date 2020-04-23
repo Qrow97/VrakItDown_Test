@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    public GameObject damageEffect; //damageEffect prefab buraya ekliyorsun.
     public int maxHealth = 100;
     public int currentHealth;
 
@@ -32,11 +32,11 @@ public class Player : MonoBehaviour
     }
 
     // Reduces the players life by damageAmount 
-    void TakeDamage(int damageAmount)
+     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
-
-        if(currentHealth <= 0)
+        Instantiate(damageEffect, transform.position, Quaternion.identity); //damageEffect prefab cagirma
+        if (currentHealth <= 0)
         {
             currentHealth = 0;
             Respawn();

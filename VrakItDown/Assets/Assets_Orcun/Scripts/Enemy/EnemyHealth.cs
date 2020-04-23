@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-	public int health = 100;
+	public int health;
+	public int enrageHealthForBoss;
 	private bool isInvulnerable = false;
 	public GameObject damageEffect;	//damage, less blood
 	public GameObject deathEffect;	//death, more blood
@@ -16,7 +17,12 @@ public class EnemyHealth : MonoBehaviour
 			return;
 		health -= damage;
 		Instantiate(damageEffect, transform.position, Quaternion.identity);
-
+		if (health < enrageHealthForBoss)
+		{
+			Debug.Log("Must Enrage");
+			GetComponent<Animator>().SetBool("IsEnraged", true);
+			Debug.Log("ENRAGED");
+		}
 		if (health <= 0)
 		{
 			Die();

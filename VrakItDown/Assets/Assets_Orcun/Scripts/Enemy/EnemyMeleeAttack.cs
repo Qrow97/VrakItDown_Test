@@ -21,7 +21,7 @@ public class EnemyMeleeAttack : MonoBehaviour
 		Collider2D colliderInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colliderInfo != null)
 		{
-			colliderInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
+			colliderInfo.GetComponent<Player>().TakeDamage(attackDamage);
 		}
 	}
 
@@ -34,7 +34,7 @@ public class EnemyMeleeAttack : MonoBehaviour
 		Collider2D colliderInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
 		if (colliderInfo != null)
 		{
-			colliderInfo.GetComponent<PlayerHealth>().TakeDamage(enragedAttackDamage);
+			colliderInfo.GetComponent<Player>().TakeDamage(enragedAttackDamage);
 		}
 	}
 
