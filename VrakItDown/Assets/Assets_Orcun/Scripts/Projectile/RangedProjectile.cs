@@ -24,13 +24,18 @@ public class RangedProjectile : MonoBehaviour
         RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsSolid);
         if (hitInfo.collider != null)
         {
+            Debug.Log("hitboxFound");
             if (hitInfo.collider.CompareTag("Enemy"))
             {
                 //hit dmg
+                DestroyProjectile();
                 hitInfo.collider.GetComponent<EnemyHealth>().TakeDamage(damage);
+    
+                Debug.Log("Damaged");
             }
             //Going be destroyed anyway
             DestroyProjectile();
+            Debug.Log("Destroyed");
         }
         //calculating where to fly
         transform.Translate(Vector2.up * speed * Time.deltaTime);
