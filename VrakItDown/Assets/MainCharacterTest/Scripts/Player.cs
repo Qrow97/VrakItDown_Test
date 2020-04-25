@@ -7,7 +7,6 @@ public class Player : MonoBehaviour
     public GameObject damageEffect; //damageEffect prefab buraya ekliyorsun.
     public int maxHealth = 100;
     public int currentHealth;
-
     public HealthBar healthBar;
 
     // Start is called before the first frame update
@@ -64,5 +63,23 @@ public class Player : MonoBehaviour
         transform.position = Vector3.zero;
     }
 
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        currentHealth = data.health;
+
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+    }
+    
+  
 
 }

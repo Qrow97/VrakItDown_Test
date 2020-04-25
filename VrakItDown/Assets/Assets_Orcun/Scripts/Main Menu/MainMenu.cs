@@ -19,6 +19,15 @@ public class MainMenu : MonoBehaviour
     }
     public void LoadGame()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
+        //SceneManager.LoadScene(PlayerPrefs.GetInt("Level"));
+
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        int level = data.level;
+
+        SceneManager.LoadScene(level);
     }
+
+
+    //return mainmenu
 }
