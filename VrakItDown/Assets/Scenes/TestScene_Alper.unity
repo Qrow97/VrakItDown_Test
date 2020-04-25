@@ -1554,11 +1554,16 @@ PrefabInstance:
     - target: {fileID: 8525892966642264864, guid: 762f5cb372e9ece4aa03063769ccbd5c,
         type: 3}
       propertyPath: m_Mass
-      value: 3.5389638
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8525892966642264864, guid: 762f5cb372e9ece4aa03063769ccbd5c,
         type: 3}
       propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525892966642264864, guid: 762f5cb372e9ece4aa03063769ccbd5c,
+        type: 3}
+      propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3015,7 +3020,7 @@ PrefabInstance:
     - target: {fileID: 3747003385907423076, guid: 0c7782dd290481f489166499f265882e,
         type: 3}
       propertyPath: m_Mass
-      value: 6.0845146
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3747003385907423086, guid: 0c7782dd290481f489166499f265882e,
         type: 3}
