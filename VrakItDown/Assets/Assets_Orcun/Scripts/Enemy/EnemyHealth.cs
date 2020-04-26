@@ -6,7 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
 	public int health;
 	public int enrageHealthForBoss;
-	private bool isInvulnerable = false;
+	[SerializeField] public bool isInvulnerable = false;
+
 	public GameObject damageEffect;	//damage, less blood
 	public GameObject deathEffect;	//death, more blood
 
@@ -14,20 +15,26 @@ public class EnemyHealth : MonoBehaviour
 	public void TakeDamage(int damage)
 	{ 
 		if (isInvulnerable)
+		{
 			return;
-		health -= damage;
-		Instantiate(damageEffect, transform.position, Quaternion.identity);
-		if (health < enrageHealthForBoss)
-		{
-			Debug.Log("Must Enrage");
-			GetComponent<Animator>().SetBool("IsEnraged", true);
-			Debug.Log("ENRAGED");
 		}
-		if (health <= 0)
+		else
 		{
-			Die();
-			Instantiate(deathEffect, transform.position, Quaternion.identity);	
-		}
+			health -= damage;
+			Instantiate(damageEffect, transform.position, Quaternion.identity);
+			if (health < enrageHealthForBoss)
+			{
+
+				GetComponent<Animator>().SetBool("IsEnraged", true);
+
+			}
+			if (health <= 0)
+			{
+				Die();
+				Instantiate(deathEffect, transform.position, Quaternion.identity);
+			}
+		}	
+		
 	}
 
 	void Die()
