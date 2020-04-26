@@ -10,15 +10,9 @@ public class randomAttackSound : MonoBehaviour
 	AudioClip RandomClip()
 	{
     return audioClipArray[Random.Range(0, audioClipArray.Length-1)];
+	//array.length mi, array.lenght-1 mi olmasi gerektiginde emin olamadim. Sonra kontrol edicem.
 	}
-    
-	// Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+	
     void Update()
     {
 		if (!audioSource.isPlaying)
