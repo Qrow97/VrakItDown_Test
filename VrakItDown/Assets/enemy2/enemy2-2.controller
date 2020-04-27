@@ -634,6 +634,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4fff191581ada444910bf3be5847b88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rgb_Red: 243
+  rgb_Green: 105
+  rgb_Blue: 105
+  transparancy: 255
 --- !u!1101 &3180090176369587914
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -669,7 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  attackRange: 3
+  attackRange: 5
 --- !u!1101 &3394595835319818364
 AnimatorStateTransition:
   m_ObjectHideFlags: 3
