@@ -38,7 +38,7 @@ public class RangedProjectile : MonoBehaviour
             Debug.Log("Destroyed");
         }
         //calculating where to fly
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
+        transform.Translate(Vector2.up * (speed) * Time.deltaTime);
     }
 
     void DestroyProjectile()
