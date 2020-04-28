@@ -9,7 +9,7 @@ public class EnemyMeleeAttack : MonoBehaviour
 	public int enragedAttackDamage = 15;
 
 	public Vector3 attackOffset;
-	public float attackRange = 1.5f;
+	public float attackRange = 1f;
 	public LayerMask attackMask;
 
 	public void EnemyAttack()
