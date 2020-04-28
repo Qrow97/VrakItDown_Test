@@ -1938,7 +1938,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.576906, y: 10.001425, z: -10}
+  m_LocalPosition: {x: -20.49078, y: 10.001021, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1158233186}
@@ -3062,7 +3062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158233185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.233095, y: -5.4514246, z: 0}
+  m_LocalPosition: {x: -14.3192215, y: -5.451021, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1354373294}
@@ -5839,6 +5839,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kimmit_6.4 Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 248328323648897508, guid: 762f5cb372e9ece4aa03063769ccbd5c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0018250844
+      objectReference: {fileID: 0}
+    - target: {fileID: 248328323648897508, guid: 762f5cb372e9ece4aa03063769ccbd5c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999984
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762f5cb372e9ece4aa03063769ccbd5c, type: 3}
