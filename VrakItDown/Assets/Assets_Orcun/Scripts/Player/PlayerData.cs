@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public class PlayerData 
 {
     public int health;
+    public int level;
     public float[] position;
 
     public PlayerData(Player player)
     {
         health = player.currentHealth;
+
+        level = SceneManager.GetActiveScene().buildIndex;
         
         position = new float[3];
         position[0] = player.transform.position.x;
