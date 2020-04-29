@@ -2,44 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boss_Enrage : StateMachineBehaviour
+public class Enemy_Dash : StateMachineBehaviour
 {
-    public byte rgb_Red;
-    public byte rgb_Green;
-    public byte rgb_Blue;
-    public byte transparancy;
+    private Rigidbody2D rb;
+    public float dashSpeed;
+    Transform player;
+    Vector2 dashPosition;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
-        animator.GetComponent<EnemyHealth>().isInvulnerable = true;
-        animator.SetBool("IsEnraged", false);
-
+        rb = animator.GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        dashPosition = new Vector2(player.position.x, rb.position.y);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        if(rb.position.x <= player.position.x)
+        {
+            Vector2 newPos = Vector2.MoveTowards(rb.position, dashPosition, dashSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(newPos);
+        }
+        else if(rb.position.x > player.position.x)
+        {
+            Vector2 newPos = Vector2.MoveTowards(rb.position, dashPosition, dashSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(newPos);
+        }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.GetComponent<EnemyHealth>().isInvulnerable = false;
-        //after this anim, color of enemy changes permanantly, params rgb and transparancy
-        //cenesi degismiyor, sanirim ilk buldugu sprite renderer daki color u degistiyor sadece, alttakinde hepsini bulup degistiriyor
-        //animator.GetComponentInChildren<SpriteRenderer>().color = new Color32(243, 105, 105, 255);\
-
-       //take all of the components those who have sprite renderer, and change it's color for all of them.
-        Component[] childComponents = animator.GetComponentsInChildren<SpriteRenderer>();
-       foreach(SpriteRenderer enemyColor in childComponents)
-        {
-            enemyColor.color = new Color32(rgb_Red, rgb_Green, rgb_Blue, transparancy);
-        }
         
-
-
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
