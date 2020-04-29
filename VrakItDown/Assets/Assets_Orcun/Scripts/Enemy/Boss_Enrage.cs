@@ -12,7 +12,7 @@ public class Boss_Enrage : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         
-        animator.GetComponent<EnemyHealth>().isInvulnerable = true;
+        //animator.GetComponent<EnemyHealth>().isInvulnerable = true;
         
        
 
@@ -36,7 +36,7 @@ public class Boss_Enrage : StateMachineBehaviour
         Component[] childComponents = animator.GetComponentsInChildren<SpriteRenderer>();
        foreach(SpriteRenderer enemyColor in childComponents)
         {
-            enemyColor.color = new Color32(rgb_Red, rgb_Green, rgb_Blue, transparancy);
+            enemyColor.color = new Color32(255, 100, 100, 255);
         }
         
 
