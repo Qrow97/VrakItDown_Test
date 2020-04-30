@@ -13,10 +13,7 @@ public class Boss_Enrage : StateMachineBehaviour
     {
         animator.GetComponent<EnemyHealth>().isInvulnerable = true;
         animator.SetBool("IsEnraged", false);
-<<<<<<< HEAD
 
-=======
->>>>>>> Test_Branch_Alper
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
