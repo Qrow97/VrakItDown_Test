@@ -11,10 +11,12 @@ public class Boss_Enrage : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
         animator.GetComponent<EnemyHealth>().isInvulnerable = true;
         animator.SetBool("IsEnraged", false);
+<<<<<<< HEAD
 
+=======
+>>>>>>> Test_Branch_Alper
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -35,7 +37,7 @@ public class Boss_Enrage : StateMachineBehaviour
         Component[] childComponents = animator.GetComponentsInChildren<SpriteRenderer>();
        foreach(SpriteRenderer enemyColor in childComponents)
         {
-            enemyColor.color = new Color32(rgb_Red, rgb_Green, rgb_Blue, transparancy);
+            enemyColor.color = new Color32(255, 100, 100, 255);
         }
         
 
