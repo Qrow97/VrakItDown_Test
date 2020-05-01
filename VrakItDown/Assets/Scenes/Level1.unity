@@ -2279,18 +2279,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &592861026 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5739867350320812341, guid: e44b63f8549271448b41ca079bd8c225,
-    type: 3}
-  m_PrefabInstance: {fileID: 5739867349803746903}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &647579618
 GameObject:
   m_ObjectHideFlags: 0
@@ -4270,18 +4258,6 @@ PolygonCollider2D:
       - {x: -38.38199, y: -0.0014485121}
       - {x: 38.41128, y: 0.0038689375}
       - {x: 38.383896, y: 21.844173}
---- !u!114 &1547452909 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5739867351077488570, guid: e44b63f8549271448b41ca079bd8c225,
-    type: 3}
-  m_PrefabInstance: {fileID: 5739867349803746903}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1573907953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 146155351449011349, guid: c97a2ee6ed9b4a8448ce626226a826f9,
@@ -5392,61 +5368,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxFactor: 0.2
---- !u!1 &1882315707 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5739867351681834476, guid: e44b63f8549271448b41ca079bd8c225,
-    type: 3}
-  m_PrefabInstance: {fileID: 5739867349803746903}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1882315708 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5739867351681834475, guid: e44b63f8549271448b41ca079bd8c225,
     type: 3}
   m_PrefabInstance: {fileID: 5739867349803746903}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1882315709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1882315707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 947d239428796b94d8dbe70e87e4e23a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1547452909}
-  gradient:
-    serializedVersion: 2
-    key0: {r: 1, g: 0, b: 0.007843138, a: 1}
-    key1: {r: 1, g: 0.3529412, b: 0, a: 1}
-    key2: {r: 1, g: 0.5882353, b: 0, a: 0}
-    key3: {r: 1, g: 0.76470596, b: 0, a: 0}
-    key4: {r: 1, g: 1, b: 0, a: 0}
-    key5: {r: 0.6666667, g: 1, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 6554
-    ctime1: 13107
-    ctime2: 19853
-    ctime3: 29491
-    ctime4: 42598
-    ctime5: 65535
-    ctime6: 0
-    ctime7: 0
-    atime0: 16191
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 6
-    m_NumAlphaKeys: 2
-  fill: {fileID: 592861026}
 --- !u!1 &1898617019
 GameObject:
   m_ObjectHideFlags: 0
@@ -6535,6 +6462,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 288962009}
     m_Modifications:
+    - target: {fileID: 3866487636054739089, guid: 7e93e4d4de7cdca4da3339421bca90eb,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6301886976278932406, guid: 3953655b0365cfe42af21612c5b8b9ff,
+        type: 3}
     - target: {fileID: 5020984967181560907, guid: 7e93e4d4de7cdca4da3339421bca90eb,
         type: 3}
       propertyPath: m_Name
@@ -6894,7 +6827,12 @@ PrefabInstance:
         type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 1882315709}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8525892966642264864, guid: 762f5cb372e9ece4aa03063769ccbd5c,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 20595a6f8c4888f40b2aa14e5c1a2042, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762f5cb372e9ece4aa03063769ccbd5c, type: 3}
 --- !u!4 &8527846708288748476 stripped
