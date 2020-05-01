@@ -1021,11 +1021,22 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5598224754583292487, guid: 45b0649c2dbae03429125e5ffe5def5c,
+        type: 3}
+      propertyPath: fireEffect
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5598224754583292536, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1277915423}
+    - target: {fileID: 5598224754583292536, guid: 45b0649c2dbae03429125e5ffe5def5c,
+        type: 3}
+      propertyPath: fireEffect
+      value: 
+      objectReference: {fileID: 238021736379567393, guid: 1ef13fce5184e224baae43d1fea2770d,
+        type: 3}
     - target: {fileID: 6138573025568120004, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
       propertyPath: m_Enabled
@@ -2103,6 +2114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99320096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442773951622129984, guid: 762f5cb372e9ece4aa03063769ccbd5c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762f5cb372e9ece4aa03063769ccbd5c, type: 3}
@@ -4462,6 +4478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1277915423}
   isFlipped: 0
+  fireEffect: {fileID: 0}
 --- !u!95 &2361145659302834519
 Animator:
   serializedVersion: 3

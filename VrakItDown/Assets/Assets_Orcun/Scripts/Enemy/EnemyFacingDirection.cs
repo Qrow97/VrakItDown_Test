@@ -8,6 +8,7 @@ public class EnemyFacingDirection : MonoBehaviour
 	public Transform player;
 
 	public bool isFlipped = false;
+	public GameObject fireEffect;	//enemy2 fire efekti
 
 	public void FaceToPlayer()
 	{
@@ -27,6 +28,19 @@ public class EnemyFacingDirection : MonoBehaviour
 			transform.localScale = flipped;
 			transform.Rotate(0f, 180f, 0f);
 			isFlipped = true;
+		}
+	}
+	
+	void FireBreath()			//animasyon bu event'i cagiriyor
+	{
+		
+		if(isFlipped==true)		//saga bakiyorsa alev 180 derece y ekseninde donuyor
+		{
+			Instantiate(fireEffect, transform.position, Quaternion.Euler(0f, 180f, 0f));
+		}
+		else					//sola bakiyorsa extra birsey yok
+		{
+			Instantiate(fireEffect, transform.position, Quaternion.identity);
 		}
 	}
 

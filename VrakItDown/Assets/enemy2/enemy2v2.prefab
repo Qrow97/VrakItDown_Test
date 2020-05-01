@@ -1427,7 +1427,6 @@ MonoBehaviour:
     type: 3}
   deathEffect: {fileID: 1692970239566881582, guid: 7e51e25437979da4cbf1817e4dc9aa4a,
     type: 3}
-  fireEffecr: {fileID: 0}
 --- !u!114 &5598224754583292536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,6 +1441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2038030127107726106}
   isFlipped: 0
+  fireEffect: {fileID: 238021736379567393, guid: 1ef13fce5184e224baae43d1fea2770d,
+    type: 3}
 --- !u!114 &5598224754583292538
 MonoBehaviour:
   m_ObjectHideFlags: 0
