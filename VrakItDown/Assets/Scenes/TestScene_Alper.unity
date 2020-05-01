@@ -989,7 +989,7 @@ PrefabInstance:
     - target: {fileID: 2038030127107726106, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2038030127107726106, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
@@ -1016,11 +1016,32 @@ PrefabInstance:
       propertyPath: m_LocalRotation.w
       value: 0.9982426
       objectReference: {fileID: 0}
+    - target: {fileID: 5182409973956546137, guid: 45b0649c2dbae03429125e5ffe5def5c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598224754583292487, guid: 45b0649c2dbae03429125e5ffe5def5c,
+        type: 3}
+      propertyPath: fireEffect
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5598224754583292536, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 1277915423}
+    - target: {fileID: 5598224754583292536, guid: 45b0649c2dbae03429125e5ffe5def5c,
+        type: 3}
+      propertyPath: fireEffect
+      value: 
+      objectReference: {fileID: 238021736379567393, guid: 1ef13fce5184e224baae43d1fea2770d,
+        type: 3}
+    - target: {fileID: 6138573025568120004, guid: 45b0649c2dbae03429125e5ffe5def5c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6806351981282842638, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
       propertyPath: m_LocalRotation.z
@@ -1044,7 +1065,7 @@ PrefabInstance:
     - target: {fileID: 7139532226426917819, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7968219457946832641, guid: 45b0649c2dbae03429125e5ffe5def5c,
         type: 3}
@@ -2002,7 +2023,7 @@ PrefabInstance:
     - target: {fileID: 248328322634817526, guid: 762f5cb372e9ece4aa03063769ccbd5c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 248328322634817526, guid: 762f5cb372e9ece4aa03063769ccbd5c,
         type: 3}
@@ -2093,6 +2114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.99320096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442773951622129984, guid: 762f5cb372e9ece4aa03063769ccbd5c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762f5cb372e9ece4aa03063769ccbd5c, type: 3}
@@ -3061,6 +3087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BOSS
+      objectReference: {fileID: 0}
+    - target: {fileID: 8370681555841241204, guid: 9c9d1b8909536ea46b834f1b35dff078,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8790657872199762343, guid: 9c9d1b8909536ea46b834f1b35dff078,
         type: 3}
@@ -4427,6 +4458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   enrageHealthForBoss: 0
+  rageCheck: 0
   isInvulnerable: 0
   damageEffect: {fileID: 1511890543161336146, guid: 94fb84565e2cd1f4a9a32f695fb61209,
     type: 3}
@@ -4446,6 +4478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1277915423}
   isFlipped: 0
+  fireEffect: {fileID: 0}
 --- !u!95 &2361145659302834519
 Animator:
   serializedVersion: 3
