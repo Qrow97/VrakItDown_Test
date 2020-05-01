@@ -30,9 +30,10 @@ public class MainMenu : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 
 
-    //return mainmenu
+    
 }
