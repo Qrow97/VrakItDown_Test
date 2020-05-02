@@ -921,6 +921,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1731922964739218216, guid: 341c1f20a91fa5e42a959e88e66cb4fd,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731922964739218216, guid: 341c1f20a91fa5e42a959e88e66cb4fd,
+        type: 3}
+      propertyPath: startDashTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731922964739218216, guid: 341c1f20a91fa5e42a959e88e66cb4fd,
+        type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 369657426}
+    - target: {fileID: 1731922964739218217, guid: 341c1f20a91fa5e42a959e88e66cb4fd,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731922964739218217, guid: 341c1f20a91fa5e42a959e88e66cb4fd,
+        type: 3}
+      propertyPath: startDashTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1731922964739218231, guid: 341c1f20a91fa5e42a959e88e66cb4fd,
         type: 3}
       propertyPath: healthBar
@@ -1543,6 +1568,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &369657426 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 4483294120331896883, guid: 341c1f20a91fa5e42a959e88e66cb4fd,
+    type: 3}
+  m_PrefabInstance: {fileID: 217476246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &388875407
 GameObject:
   m_ObjectHideFlags: 0

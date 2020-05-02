@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     private Animator animator;
 
-
     [Header("Horizontal Movement")]
     public float horizontalMoveDirection = 0f;
     public float runSpeed = 40f;
@@ -22,20 +21,21 @@ public class PlayerMovement : MonoBehaviour
     [Header("Others")]
     public bool isGrounded;
 
-    /*
-    SavePlayerPosition playerPositionData;
-    private void Awake()
-    {
-        playerPositionData = FindObjectOfType<SavePlayerPosition>();
-        playerPositionData.PlayerPositionLoad();
-    }
-    */
+    [Header("Dash Movement")]
+    public Rigidbody2D rb;
+    public float dashSpeed;
+    private float dashTime;
+    public float startDashTime;
+    private int direction;
+
 
     // Initialization
     private void Start()
     {
        
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        dashTime = startDashTime;
 
     }
 
@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
         // [-] :)
         Jump();
         Animator();
+        DashMove();
 
     }
 
@@ -95,6 +96,43 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("canDoubleJump", doubleJumpAnimation);
         animator.SetBool("grounded", isGrounded);
         animator.SetFloat("velocityX", Mathf.Abs(horizontalMoveDirection) );
+    }
+
+    private void DashMove()
+    {
+        if(direction == 0)
+        {
+            if (Input.GetButtonDown("Dash") && horizontalMoveDirection < 0)
+            {
+                direction = 1;
+            }else if (Input.GetButtonDown("Dash") && horizontalMoveDirection > 0)
+            {
+                direction = 2;
+            }
+        }
+        else
+        {
+            if(dashTime <= 0)
+            {
+                direction = 0;
+                dashTime = startDashTime;
+                rb.velocity = Vector2.zero;
+            }
+            else
+            {
+                dashTime -= Time.deltaTime;
+
+                if(direction == 1)
+                {
+                    rb.AddForce(new Vector2(-dashSpeed, 0f));
+
+                }
+                else if(direction == 2)
+                {
+                    rb.AddForce(new Vector2(dashSpeed, 0f));
+                }
+            }
+        }
     }
 
 
