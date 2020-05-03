@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e898a085860ce48b65e2cd59578bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agroRange: 7
+  agroRange: 10
   speed: 2.5
 --- !u!1101 &6853709051049322358
 AnimatorStateTransition:
