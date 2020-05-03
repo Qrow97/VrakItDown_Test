@@ -1649,9 +1649,9 @@ MonoBehaviour:
   canDoubleJump: 0
   doubleJumpAnimation: 0
   isGrounded: 0
-  rb: {fileID: 0}
-  dashSpeed: 0
-  startDashTime: 0
+  rb: {fileID: 4835404778292371968}
+  dashSpeed: 500
+  startDashTime: 0.1
 --- !u!114 &1053164814836967663
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf7c34a0dc4e6348bea04faa70406ee, type: 3}
+  m_Name: enemy2skins
+  m_EditorClassIdentifier: 
+  m_Labels:
+  - m_Name: Govde
+    m_Hash: 595704711
+    m_CategoryList:
+    - m_Name: minion
+      m_Hash: 1159390131
+      m_Sprite: {fileID: -2942425056991449389, guid: d04704912ab57734bab4abeb112004e1,
+        type: 3}
+    - m_Name: boss
+      m_Hash: 1056859706
+      m_Sprite: {fileID: 6641284218246511628, guid: aaf499de4e0eaa6459ea9ef3d55e1e44,
+        type: 3}
+  - m_Name: Agiz
+    m_Hash: 1268479277
+    m_CategoryList:
+    - m_Name: minion
+      m_Hash: 1159390131
+      m_Sprite: {fileID: 833544240933999416, guid: d04704912ab57734bab4abeb112004e1,
+        type: 3}
+    - m_Name: boss
+      m_Hash: 1056859706
+      m_Sprite: {fileID: -5875468306421152734, guid: aaf499de4e0eaa6459ea9ef3d55e1e44,
+        type: 3}
