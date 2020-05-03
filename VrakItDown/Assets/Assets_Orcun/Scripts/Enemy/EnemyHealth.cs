@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 	public int health;
-	private int maxHealt
+	private int maxHealt;
 	public int enrageHealthForBoss;
 	public int rageCheck = 0;
 	[SerializeField] public bool isInvulnerable = false;
