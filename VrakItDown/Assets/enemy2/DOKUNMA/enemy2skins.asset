@@ -16,22 +16,38 @@ MonoBehaviour:
   - m_Name: Govde
     m_Hash: 595704711
     m_CategoryList:
-    - m_Name: minion
-      m_Hash: 1159390131
+    - m_Name: pembe
+      m_Hash: 420795490
       m_Sprite: {fileID: 7327653689389481862, guid: 523dc13851bc435409771f08a172b011,
         type: 3}
     - m_Name: boss
       m_Hash: 1056859706
       m_Sprite: {fileID: 6641284218246511628, guid: aaf499de4e0eaa6459ea9ef3d55e1e44,
         type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: -3316889776806446043, guid: b1e4ca38533207e47b301d142c94eb8c,
+        type: 3}
+    - m_Name: gri
+      m_Hash: -1681996225
+      m_Sprite: {fileID: -1039481798734204225, guid: eaca414569eb01c43a0cbd27b76e7235,
+        type: 3}
   - m_Name: Agiz
     m_Hash: 1268479277
     m_CategoryList:
-    - m_Name: minion
-      m_Hash: 1159390131
+    - m_Name: pembe
+      m_Hash: 420795490
       m_Sprite: {fileID: -1080866944155218786, guid: 523dc13851bc435409771f08a172b011,
         type: 3}
     - m_Name: boss
       m_Hash: 1056859706
       m_Sprite: {fileID: -5875468306421152734, guid: aaf499de4e0eaa6459ea9ef3d55e1e44,
+        type: 3}
+    - m_Name: mavi
+      m_Hash: -334080423
+      m_Sprite: {fileID: 7889119427536709268, guid: b1e4ca38533207e47b301d142c94eb8c,
+        type: 3}
+    - m_Name: gri
+      m_Hash: -1681996225
+      m_Sprite: {fileID: 8098428818979977395, guid: eaca414569eb01c43a0cbd27b76e7235,
         type: 3}
