@@ -18,7 +18,7 @@ MonoBehaviour:
     m_CategoryList:
     - m_Name: minion
       m_Hash: 1159390131
-      m_Sprite: {fileID: -2942425056991449389, guid: d04704912ab57734bab4abeb112004e1,
+      m_Sprite: {fileID: 8047085995732086971, guid: d04704912ab57734bab4abeb112004e1,
         type: 3}
     - m_Name: boss
       m_Hash: 1056859706
@@ -29,7 +29,7 @@ MonoBehaviour:
     m_CategoryList:
     - m_Name: minion
       m_Hash: 1159390131
-      m_Sprite: {fileID: 833544240933999416, guid: d04704912ab57734bab4abeb112004e1,
+      m_Sprite: {fileID: 1792205396161473058, guid: d04704912ab57734bab4abeb112004e1,
         type: 3}
     - m_Name: boss
       m_Hash: 1056859706
