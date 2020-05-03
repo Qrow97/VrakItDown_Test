@@ -13,6 +13,7 @@ public class PlayerRangedAttack : MonoBehaviour
     public float startBetweenShots;
     
     public GameObject projectile;
+	public AudioSource audioSource;
     void Start()
     {
       
@@ -34,6 +35,7 @@ public class PlayerRangedAttack : MonoBehaviour
                 Debug.Log("Ranged attack Used");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
                 timeBetweenShots = startBetweenShots;
+				audioSource.Play();
             }
         }
         else

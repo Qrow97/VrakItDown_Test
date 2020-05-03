@@ -145,6 +145,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb097312b30f484c8a79b58a58408ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1102 &-3956875087448331134
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: dash
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d0d0c6ec1b4d0d74f8a00c389077aa9c, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-3766258524793969850
 AnimatorState:
   serializedVersion: 5
@@ -221,7 +247,7 @@ AnimatorStateTransition:
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0.09833333
-  m_TransitionOffset: 0.25277793
+  m_TransitionOffset: 0.5011649
   m_ExitTime: 0.8000001
   m_HasExitTime: 1
   m_HasFixedDuration: 1
@@ -611,6 +637,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 3990928938361593576}
     m_Position: {x: 710, y: 460, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3956875087448331134}
+    m_Position: {x: 0, y: 540, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -1711771266530382445}

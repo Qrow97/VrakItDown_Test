@@ -739,6 +739,7 @@ GameObject:
   - component: {fileID: 1731922964739218217}
   - component: {fileID: 1731922964739218216}
   - component: {fileID: 1731922964739218231}
+  - component: {fileID: -5895101455611033706}
   m_Layer: 10
   m_Name: Kimmit Melee
   m_TagString: Player
@@ -977,6 +978,9 @@ MonoBehaviour:
   canDoubleJump: 0
   doubleJumpAnimation: 0
   isGrounded: 0
+  rb: {fileID: 0}
+  dashSpeed: 0
+  startDashTime: 0
 --- !u!114 &1731922964739218231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,6 +999,20 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 7057985268504143212, guid: e44b63f8549271448b41ca079bd8c225,
     type: 3}
+--- !u!114 &-5895101455611033706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411056327933648111}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86ef8e403bd20bb4e89762acab83fb3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  audioClipArray: []
 --- !u!1 &5411056327982920096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1685,7 @@ MonoBehaviour:
   startBetweenShots: 0.3
   projectile: {fileID: 2215294183151032885, guid: 26f00d9e9e86c3946a59b7f3733e0683,
     type: 3}
+  audioSource: {fileID: 0}
 --- !u!1 &5411056328569797170
 GameObject:
   m_ObjectHideFlags: 0
