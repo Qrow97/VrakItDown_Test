@@ -6,10 +6,8 @@ public class Enemy_Walk_Combat : StateMachineBehaviour
 {
 
     public string attackTriggerName = "Attack";
-    [SerializeField] float agroRange;
-    [SerializeField] float stoppingDistance;
-
-    
+    public float agroRange;
+    public float stoppingDistance;
     public float attackRange = 3f;
     public float speed = 2.5f;
 
@@ -40,7 +38,8 @@ public class Enemy_Walk_Combat : StateMachineBehaviour
             
         }
         else if (distanceToPlayer <= stoppingDistance)
-        {
+        {   
+            //stay on current position
             rigidBody.position = this.rigidBody.position;
         }
         else

@@ -39,16 +39,9 @@ public class Enemy_Walk : StateMachineBehaviour
         {
 
             //chase player
-            //ChasePlayer();
             animator.SetBool("isPlayerInRange", true);
         }
-    
-        else
-        {
-
-            //stop chasing player and return patrolling
-            StopChaseStartPatroll();
-        }  
+     
     }
 
     //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
@@ -56,10 +49,6 @@ public class Enemy_Walk : StateMachineBehaviour
     {
         
     }
-    private void StopChaseStartPatroll()
-    {
 
-        //stop chasing
-    }
 
 }

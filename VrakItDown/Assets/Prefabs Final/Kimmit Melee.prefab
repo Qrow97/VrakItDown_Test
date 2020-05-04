@@ -993,7 +993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17f3033ee6f0f34a85a8a0686cee138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageEffect: {fileID: 3000667300745243835, guid: afe45dc07b2c1a04dbf79ca22eaf7ed3,
+  damageEffect: {fileID: 3000667300745243835, guid: 6ecab4f4bcbdda84eb49334cd863f9f5,
     type: 3}
   maxHealth: 100
   currentHealth: 0

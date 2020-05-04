@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 3662032563385732273}
   - component: {fileID: 3662032563385732272}
   m_Layer: 9
-  m_Name: Enemy Level1  1
+  m_Name: Enemy Level1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112345697865150766}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b1084ff0f3e198449c645596fc48190, type: 3}
   m_Name: 

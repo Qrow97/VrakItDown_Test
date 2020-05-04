@@ -1735,10 +1735,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1084ff0f3e198449c645596fc48190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  enrageHealthForBoss: 200
+  health: 1000
+  enrageHealthForBoss: 400
   rageCheck: 0
   isInvulnerable: 0
+  healthBar: {fileID: 0}
   damageEffect: {fileID: 1511890543161336146, guid: 94fb84565e2cd1f4a9a32f695fb61209,
     type: 3}
   deathEffect: {fileID: 1692970239566881582, guid: 7e51e25437979da4cbf1817e4dc9aa4a,
