@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Others")]
     public bool isGrounded;
+	public float isDashing = 1;
 
     [Header("Dash Movement")]
     public Rigidbody2D rb;
@@ -68,6 +69,11 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMoveDirection * Time.fixedDeltaTime, false, jump, doubleJump);
         jump = false;
         doubleJump = false;
+		if(isDashing>1)
+		{
+			isDashing = isDashing - 1;
+		}
+		
 
     }
 
@@ -102,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("canDoubleJump", doubleJumpAnimation);
         animator.SetBool("grounded", isGrounded);
         animator.SetFloat("velocityX", Mathf.Abs(horizontalMoveDirection) );
+		animator.SetFloat("dashing", isDashing);
     }
 
     private void DashMove()
@@ -134,13 +141,13 @@ public class PlayerMovement : MonoBehaviour
                     if (direction == 1)
                     {
                         rb.AddForce(new Vector2(-dashSpeed, 0f));
-                        
+                        isDashing = 10;
 
                     }
                     else if (direction == 2)
                     {
                         rb.AddForce(new Vector2(dashSpeed, 0f));
-                        
+                        isDashing = 10;
                     }
                 }
             }
