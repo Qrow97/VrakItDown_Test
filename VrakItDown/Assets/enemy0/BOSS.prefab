@@ -1406,7 +1406,6 @@ GameObject:
   - component: {fileID: 5149765437623004643}
   - component: {fileID: 5149765437623004648}
   - component: {fileID: 5149765437623004649}
-  - component: {fileID: 5149765437623004651}
   - component: {fileID: 5149765437623004650}
   m_Layer: 9
   m_Name: BOSS
@@ -1573,25 +1572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   isFlipped: 0
---- !u!114 &5149765437623004651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370681555841241204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4989a8bf03f6c0844b434c0d32bb1d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 20
-  enragedAttackDamage: 40
-  attackOffset: {x: -1.6, y: 1.5, z: 0}
-  attackRange: 1
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 1024
+  fireEffect: {fileID: 0}
 --- !u!114 &5149765437623004650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,7 +1587,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   enrageHealthForBoss: 50
+  rageCheck: 0
   isInvulnerable: 0
+  healthBar: {fileID: 0}
   damageEffect: {fileID: 1511890543161336146, guid: 94fb84565e2cd1f4a9a32f695fb61209,
     type: 3}
   deathEffect: {fileID: 1692970239566881582, guid: 7e51e25437979da4cbf1817e4dc9aa4a,
