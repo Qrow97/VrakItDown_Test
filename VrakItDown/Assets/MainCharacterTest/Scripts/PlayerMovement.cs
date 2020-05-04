@@ -18,9 +18,10 @@ public class PlayerMovement : MonoBehaviour
     public bool canDoubleJump = false;
     public bool doubleJumpAnimation = false;
 
+
     [Header("Others")]
     public bool isGrounded;
-	public float isDashing = 1;
+	//public float isDashing = 1;
 
     [Header("Dash Movement")]
     public Rigidbody2D rb;
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     private float dashTime;
     public float startDashTime;
     private int direction;
+    [SerializeField] private bool dash = false;
     
 
 
@@ -52,6 +54,15 @@ public class PlayerMovement : MonoBehaviour
         // GroundCheck by controller
         isGrounded = controller.m_Grounded;
 
+        //dashing
+        if (dash == true)
+        {
+            animator.SetTrigger("dashTrigger");
+        }else if(dash == false)
+        {
+            animator.ResetTrigger("dashTrigger");
+        }
+        
         // [-] :)
         Jump();
         Animator();
@@ -68,13 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(horizontalMoveDirection * Time.fixedDeltaTime, false, jump, doubleJump);
         jump = false;
-        doubleJump = false;
-		if(isDashing>1)
-		{
-			isDashing = isDashing - 1;
-		}
-		
-
+        doubleJump = false;  
     }
 
     
@@ -108,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("canDoubleJump", doubleJumpAnimation);
         animator.SetBool("grounded", isGrounded);
         animator.SetFloat("velocityX", Mathf.Abs(horizontalMoveDirection) );
-		animator.SetFloat("dashing", isDashing);
+        
     }
 
     private void DashMove()
@@ -130,6 +135,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (dashTime <= 0)
                 {
+                    dash = false;
                     direction = 0;
                     dashTime = startDashTime;
                     rb.velocity = Vector2.zero;
@@ -137,18 +143,23 @@ public class PlayerMovement : MonoBehaviour
                 else
                 {
                     dashTime -= Time.deltaTime;
-
+                    
                     if (direction == 1)
                     {
+                       
+                        dash = true;
                         rb.AddForce(new Vector2(-dashSpeed, 0f));
-                        isDashing = 10;
+                       
 
                     }
                     else if (direction == 2)
                     {
+                        
+                         dash = true;
                         rb.AddForce(new Vector2(dashSpeed, 0f));
-                        isDashing = 10;
+                        
                     }
+                    
                 }
             }
         
