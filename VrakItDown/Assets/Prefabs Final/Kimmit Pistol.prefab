@@ -210,8 +210,8 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 512
-  attackRangeX: 1.15
-  attackRangeY: 0.73
+  attackRangeX: 3
+  attackRangeY: 2
   damage: 25
   boxAngle: 0
   animator: {fileID: 278592218330421227}
@@ -281,6 +281,7 @@ MonoBehaviour:
   canDoubleJump: 0
   doubleJumpAnimation: 0
   isGrounded: 0
+  isDashing: 1
   rb: {fileID: 0}
   dashSpeed: 0
   startDashTime: 0

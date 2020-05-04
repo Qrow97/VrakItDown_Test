@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy_Walk : StateMachineBehaviour
 {
-    [SerializeField] float agroRange;
+    public float agroRange;
     
     public float speed = 2.5f;
     Transform player;
