@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour
 	public int rageCheck = 0;
 	[SerializeField] public bool isInvulnerable = false;
 	public HealthBar healthBar;
+	public GameObject gate;
 
 	public GameObject damageEffect;	//damage, less blood
 	public GameObject deathEffect;  //death, more blood
@@ -51,5 +52,11 @@ public class EnemyHealth : MonoBehaviour
 		isInvulnerable = true;
 		GetComponent<Animator>().SetTrigger("isDead");
 		Destroy(gameObject, 4);
+
+		if(gate != null)
+		{
+			gate.SetActive(true);
+		}
+
 	}
 }
