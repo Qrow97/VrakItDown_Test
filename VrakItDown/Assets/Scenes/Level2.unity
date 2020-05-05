@@ -5488,6 +5488,16 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 569863795}
+    - target: {fileID: 4639274210957123681, guid: 84663273f2e9ba749a2dc07053e88ab3,
+        type: 3}
+      propertyPath: startDashTime
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4639274210957123681, guid: 84663273f2e9ba749a2dc07053e88ab3,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 4835404778292371970, guid: 84663273f2e9ba749a2dc07053e88ab3,
         type: 3}
       propertyPath: attackRangeX
