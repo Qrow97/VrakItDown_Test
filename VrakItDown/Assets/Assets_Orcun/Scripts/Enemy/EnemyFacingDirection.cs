@@ -8,7 +8,8 @@ public class EnemyFacingDirection : MonoBehaviour
 	public Transform player;
 
 	public bool isFlipped = false;
-	public GameObject fireEffect;	//enemy2 fire efekti
+	public GameObject fireEffect;   //enemy2 fire efekti
+	public GameObject poisonEffect;
 
 	public void FaceToPlayer()
 	{
@@ -43,5 +44,15 @@ public class EnemyFacingDirection : MonoBehaviour
 			Instantiate(fireEffect, transform.position, Quaternion.identity);
 		}
 	}
-
+	void PoisonBreath()
+	{
+		if (isFlipped == true)      //saga bakiyorsa alev 180 derece y ekseninde donuyor
+		{
+			Instantiate(poisonEffect, transform.position, Quaternion.Euler(0f, 180f, 0f));
+		}
+		else                    //sola bakiyorsa extra birsey yok
+		{
+			Instantiate(poisonEffect, transform.position, Quaternion.identity);
+		}
+	}
 }
