@@ -132,7 +132,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
+  m_ExitTime: 0.5
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -301,7 +301,7 @@ AnimatorStateTransition:
   serializedVersion: 3
   m_TransitionDuration: 0.1
   m_TransitionOffset: 0
-  m_ExitTime: 0.9
+  m_ExitTime: 0.1
   m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackTriggerName: Attack
-  agroRange: 15
+  agroRange: 20
   stoppingDistance: 1
   attackRange: 2
   speed: 3
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e898a085860ce48b65e2cd59578bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agroRange: 15
+  agroRange: 20
   speed: 3
 --- !u!1102 &8822564486040381406
 AnimatorState:

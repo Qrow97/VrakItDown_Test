@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: fire
+  m_Name: poisonBreath
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -1271,20 +1271,20 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 1.0833334
-    functionName: FireBreath
+    functionName: PoisonBreath
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.2333333
+  - time: 1.2833333
     functionName: LongRangeAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.5
+  - time: 1.5166667
     functionName: LongRangeAttack
     data: 
     objectReferenceParameter: {fileID: 0}
@@ -1298,7 +1298,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.1666667
+  - time: 2.15
     functionName: LongRangeAttack
     data: 
     objectReferenceParameter: {fileID: 0}
