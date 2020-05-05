@@ -8195,6 +8195,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6991624687015904292, guid: 0f360c4a836a968448141885bbb91d3c,
+        type: 3}
+      propertyPath: startDashTime
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991624687015904292, guid: 0f360c4a836a968448141885bbb91d3c,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 6991624687015904315, guid: 0f360c4a836a968448141885bbb91d3c,
         type: 3}
       propertyPath: healthBar

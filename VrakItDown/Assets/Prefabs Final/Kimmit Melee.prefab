@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 6991624687015904292}
   - component: {fileID: 3767370517901669668}
   m_Layer: 10
-  m_Name: Kimmit Melee 1
+  m_Name: Kimmit Melee
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,7 +820,7 @@ MonoBehaviour:
   isGrounded: 0
   rb: {fileID: 5132387654331725631}
   dashSpeed: 250
-  startDashTime: 0.4
+  startDashTime: 0.25
   dash: 0
 --- !u!114 &3767370517901669668
 MonoBehaviour:
