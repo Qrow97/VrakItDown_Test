@@ -2430,7 +2430,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.49887, y: 10.00102, z: -10}
+  m_LocalPosition: {x: -20.49078, y: 10.001021, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1158233186}
@@ -3634,7 +3634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158233185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.311131, y: -4.2210197, z: 0}
+  m_LocalPosition: {x: -15.3192215, y: -4.2210207, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1354373294}
@@ -8210,5 +8210,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1076234768}
+    - target: {fileID: 6991624687015904315, guid: 0f360c4a836a968448141885bbb91d3c,
+        type: 3}
+      propertyPath: damageEffect
+      value: 
+      objectReference: {fileID: 3000667300745243835, guid: 6ecab4f4bcbdda84eb49334cd863f9f5,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f360c4a836a968448141885bbb91d3c, type: 3}
