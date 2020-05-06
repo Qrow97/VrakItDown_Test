@@ -12,7 +12,7 @@ public class PlayerData
 
     public PlayerData(Player player)
     {
-        health = player.currentHealth;
+        
 
         level = SceneManager.GetActiveScene().buildIndex;
         
@@ -20,6 +20,6 @@ public class PlayerData
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
         position[2] = player.transform.position.z;
-
+		health = player.currentHealth;
     }
 }
