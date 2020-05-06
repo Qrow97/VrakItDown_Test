@@ -2961,8 +2961,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1084ff0f3e198449c645596fc48190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 600
-  enrageHealthForBoss: 300
+  health: 750
+  enrageHealthForBoss: 350
   rageCheck: 0
   isInvulnerable: 0
   healthBar: {fileID: 0}
@@ -5256,12 +5256,12 @@ PrefabInstance:
     - target: {fileID: 4179242165802458608, guid: 2ecf39788485a8542a0899ebc40553c2,
         type: 3}
       propertyPath: health
-      value: 600
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 4179242165802458608, guid: 2ecf39788485a8542a0899ebc40553c2,
         type: 3}
       propertyPath: enrageHealthForBoss
-      value: 300
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 7496185237715405997, guid: 2ecf39788485a8542a0899ebc40553c2,
         type: 3}

@@ -323,7 +323,7 @@ MonoBehaviour:
   agroRange: 20
   stoppingDistance: 1
   attackRange: 2
-  speed: 3
+  speed: 4
 --- !u!1102 &3912279657403355239
 AnimatorState:
   serializedVersion: 5
