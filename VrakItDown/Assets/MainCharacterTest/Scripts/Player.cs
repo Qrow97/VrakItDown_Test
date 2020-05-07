@@ -19,8 +19,14 @@ public class Player : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
+    // updates every fixed time 
+    private void FixedUpdate()
+    {
+        healthBar.SetHealth(currentHealth);
+    }
+
     // Reduces the players life by damageAmount 
-     public void TakeDamage(int damageAmount)
+    public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
 
