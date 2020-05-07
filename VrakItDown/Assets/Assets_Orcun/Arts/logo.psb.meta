@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ba9f3ebcaf00cf478117f465d4620e4
+guid: 58e85f04e28cd8c4ca1f85c9b61f4e78
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -26,7 +26,7 @@ ScriptedImporter:
     streamingMipmapsPriority: 0
     nPOTScale: 1
     sRGBTexture: 1
-    spriteMode: 2
+    spriteMode: 1
     spriteExtrude: 1
     spriteMeshType: 1
     alignment: 0
@@ -86,7 +86,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: headdo0
+  - name: head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -96,8 +96,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 350
-      height: 362
-    spriteID: e4703f1c5988a6f4b8cd54856a0c5457
+      height: 368
+    spriteID: 982f50f093fc25a43a620dc5ba18a68e
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -107,26 +107,15 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -63, y: -38}
-  platformSettings:
-  - name: Default
-    overridden: 1
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+    uvTransform: {x: 4, y: 4}
+  platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
   importedTextureWidth: 512
   importedTextureHeight: 512
-  documentSize: {x: 450, y: 450}
+  documentSize: {x: 350, y: 368}
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   spriteCategoryList:
@@ -138,12 +127,12 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: headdo0
-    spriteName: headdo0
+  - name: head
+    spriteName: head
     isGroup: 0
     parentIndex: -1
-    spriteID: e4703f1c5988a6f4b8cd54856a0c5457
-    layerID: 0
+    spriteID: 982f50f093fc25a43a620dc5ba18a68e
+    layerID: 5
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
@@ -151,7 +140,7 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
   generateGOHierarchy: 0
-  textureAssetName: headdo0 Texture
-  prefabAssetName: headdo0 Prefab
-  spriteLibAssetName: headdo0 Sprite Lib
+  textureAssetName: logo Texture
+  prefabAssetName: logo Prefab
+  spriteLibAssetName: logo Sprite Lib
   secondarySpriteTextures: []

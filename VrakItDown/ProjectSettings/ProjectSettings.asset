@@ -121,7 +121,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.1
+  bundleVersion: 1.4
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -280,7 +280,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2755162340603402647, guid: 8ba9f3ebcaf00cf478117f465d4620e4,
+      m_Icon: {fileID: -1044213550613357208, guid: 58e85f04e28cd8c4ca1f85c9b61f4e78,
         type: 3}
       m_Width: 128
       m_Height: 128
