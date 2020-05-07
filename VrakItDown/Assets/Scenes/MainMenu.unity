@@ -2061,10 +2061,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 711364969}
     m_Modifications:
+    - target: {fileID: 3792681280364286981, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472487035494963, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.15804133
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472487213320778, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.05870529
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472487442304457, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.11640979
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472487442304457, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99320126
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472487948849122, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.09239249
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488408682539, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.96276283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488408682539, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.27034757
+      objectReference: {fileID: 0}
     - target: {fileID: 4720472488481684992, guid: be82ea289560a6348b735385a0d9a4ef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.82
+      value: 8.88
       objectReference: {fileID: 0}
     - target: {fileID: 4720472488481684992, guid: be82ea289560a6348b735385a0d9a4ef,
         type: 3}
@@ -2121,6 +2161,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenu Pistol Kimmit
       objectReference: {fileID: 0}
+    - target: {fileID: 4720472488491045722, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6781266
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488491045722, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7349451
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488578164730, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000005587469
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488739832186, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.99769133
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488739832186, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.067911796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488904481425, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0057689124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472488904481425, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999834
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472489037872477, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.12625587
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472489098366272, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.19612968
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720472489098366272, guid: be82ea289560a6348b735385a0d9a4ef,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.98057795
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be82ea289560a6348b735385a0d9a4ef, type: 3}
 --- !u!1001 &7256264039144860213
@@ -2134,6 +2224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.11641034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245008220341386529, guid: e472e8c7e0046ad4eab6767f7d484ef1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0018250844
       objectReference: {fileID: 0}
     - target: {fileID: 6245008220460078969, guid: e472e8c7e0046ad4eab6767f7d484ef1,
         type: 3}
@@ -2154,6 +2249,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.09239261
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245008220881518375, guid: e472e8c7e0046ad4eab6767f7d484ef1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.14729409
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245008220972660423, guid: e472e8c7e0046ad4eab6767f7d484ef1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.075154945
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245008220972660423, guid: e472e8c7e0046ad4eab6767f7d484ef1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9971719
       objectReference: {fileID: 0}
     - target: {fileID: 6245008221186248297, guid: e472e8c7e0046ad4eab6767f7d484ef1,
         type: 3}
@@ -2244,6 +2354,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.12625647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245008221714194542, guid: e472e8c7e0046ad4eab6767f7d484ef1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9919977
       objectReference: {fileID: 0}
     - target: {fileID: 6245008221787279475, guid: e472e8c7e0046ad4eab6767f7d484ef1,
         type: 3}
